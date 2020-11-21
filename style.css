@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Bai Jamjuree";
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3 {
+    color: hsl(210, 10%, 33%);
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+}
+
+button {
+    width: 15%;
+    height: 40px;
+    color: white;
+    outline: none;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+button:active {
+    transform: translateY(5%);
+}
+
+/* Header Section */
+
+header {
+    text-align: center;
+    margin-top: 10%;
+}
+
+header img {
+    margin-bottom: 5%;
+}
+
+.btn-ios {
+    background: hsl(171, 66%, 44%);
+    border: 1px solid hsl(171, 66%, 44%);
+    box-shadow: 0px 1px 5px hsl(171, 66%, 44%);
+}
+
+.btn-mac {
+    background: hsl(233, 100%, 69%);
+    border: 1px solid hsl(233, 100%, 69%);
+    box-shadow: 0px 1px 5px hsl(233, 100%, 69%);
+}
+
+/* Snippets Section */
+#snippets {
+    width: 100%;
+    height: 600px;
+    margin-top: 10%;
+    background-image: url(./images/image-computer.png);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: -4% 150%;
+    margin-bottom: 10%;
+    
+}
+
+.snippets-intro {
+    margin: auto;
+    text-align: center;
+    width: 600px;
+    margin-bottom: 100px;
+}
+
+.snippet-features {
+    width: 400px;
+    margin-left: 50%;
+}
+
+/* Access */
+#access {
+    text-align: center;
+}
+#access p {
+    width: 400px;
+    margin: auto;
+}
+
+#access img {
+    margin-top: 5%;
+    width: 60%;
+}
+
+/* Workflow */
+#workflow {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.workflow-intro {
+    margin-bottom: 5%;
+}
+
+.card {
+    display: inline-block;
+    width: 25%;
+    margin: 20px;
+    vertical-align: text-top;
+}
+
+/* Logos */
+
+#logos img{
+    margin: 4%;
+}
+
+/* Closing */
+#closing {
+    margin: auto;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    width: 80%;
+}
+
+#closing p {
+    width: 40%;
+    margin: 3% auto 3% auto;
+}
+
+/* Footer */
+
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background: #eee;
+    height: auto;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+    
+}
+
+footer img {
+    width: 10%;
+    margin-top: 5%;
+    margin-left: 40%;
+}
+
+footer a {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+}
+
+footer a:hover {
+     color: hsl(171, 66%, 44%);
+     cursor: pointer;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons img {
+    height: 20px;
+    width: auto;
+}
+
+.icons img:hover {
+    filter: brightness(200%);
+    cursor: pointer;
+}
+
+/* Media Query */
+@media (max-width: 1024px) {
+    html {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        font-size: 2rem;
+        justify-content: center;
+    }
+
+    header {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    button {
+        width: 75%;
+    }
+
+    /* Snippets */
+    #snippets {
+        width: 100%;
+        height: auto;
+        background-size: 85%;
+        background-position: 50% 35%;
+        margin: auto;
+    }
+    .snippets-intro {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-bottom: 400px;
+    }
+
+    .snippet-features {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: auto;
+    }
+
+    /* Access */
+    #access img {
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    /* Workflow */
+    .card {
+        display: block;
+        width: 100%;
+        margin-top: 125px;
+    }
+
+    /* Logos */
+    #logos img {
+        display: block;
+        margin: 50px auto;
+        
+    }
+
+    /* Closing */
+    #closing {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+    #closing p {
+        width: 100%;
+        margin: 3% auto 10% auto;
+    }
+    /* Footer */
+    footer {
+        display: block;
+        width: 100%;
+        background: #eee;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+
+    }
+
+    footer img {
+        width: 20%;
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+
+    footer a {
+        margin: 20%;
+    }
+
+    .icons {
+        display: block;
+        margin: 55px;
+        padding: auto;
+    }
+
+
+}
